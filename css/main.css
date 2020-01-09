@@ -5,13 +5,11 @@
 
 html {
   font-size: 16px;
-  height: 100%;
 }
 
 body {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 1em;
-  height: 100%;
 }
 
 header {
@@ -188,7 +186,7 @@ p {
 
 .section-two h4,
 .section-three h4 {
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .menu {
@@ -202,6 +200,7 @@ p {
 
 .menu li {
   color: #77a466;
+  padding: 0 10px 0 10px;
 }
 
 .reviews {
@@ -215,19 +214,10 @@ p {
 
 .address {
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.address p {
-  padding: 0 20px 0 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 /*The widths are in a percentage!*/
@@ -246,4 +236,50 @@ footer span {
   text-transform: lowercase;
   color: #77a466;
   font-size: .875em;
+}
+
+/*Tablet Styles Here */
+@media all and (min-width:768px) {
+  .bottom-section {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .section-one {
+    width: 30%;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row wrap;
+    text-align: center;
+  }
+
+  .section-two {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .section-three {
+    width: 30%;
+    line-height: .875em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row wrap;
+  }
+}
+
+/*Desktop Styles Here*/
+@media all and (min-width:1200px) {
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
